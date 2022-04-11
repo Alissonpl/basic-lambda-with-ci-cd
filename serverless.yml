@@ -1,7 +1,10 @@
-service: aws-node # NOTE: update this with your service name
+service: aws-node
 
-frameworkVersion: '2 || 3'
+frameworkVersion: "2 || 3"
 
+plugins:
+  - serverless-bundle
+  - serverless-offline
 
 provider:
   name: aws
@@ -11,5 +14,10 @@ provider:
   region: us-east-1
 
 functions:
-  hello:
-    handler: handler.hello
+  getRoot:
+    handler: src/server.handler
+    memorySize: 128
+    events:
+      - httpApi:
+          path: /
+          method: get

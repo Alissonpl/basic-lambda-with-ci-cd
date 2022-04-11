@@ -1,0 +1,37 @@
+{
+  "name": "basic-lambda-with-ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sls offline start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alissonpl/basic-lambda-with-ci-cd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alissonpl/basic-lambda-with-ci-cd/issues"
+  },
+  "homepage": "https://github.com/Alissonpl/basic-lambda-with-ci-cd#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^2.71.0",
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.6",
+    "serverless-bundle": "^5.0.2",
+    "serverless-offline": "^8.2.0",
+    "serverless-plugin-warmup": "^5.3.1",
+    "serverless-webpack": "^5.6.1",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^9.0.0",
+    "webpack": "^5.70.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
